@@ -1,0 +1,30 @@
+.table {
+    border-collapse: collapse;
+}
+
+.cell {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #000000;
+}
+
+.line:first-child .cell,
+.line:last-child .cell,
+.cell:first-child,
+.cell:last-child {
+    height: 25px;
+    width: 25px;
+    background-color: #188C18;
+}
+
+.line:nth-child(odd) .cell:nth-child(even),
+.line:nth-child(even) .cell:nth-child(odd) {
+    background-color: #000000;
+}
+
+.line:first-child .cell:nth-child(even),
+.line:last-child .cell:nth-child(odd),
+.line:nth-child(even) .cell:first-child,
+.line:nth-child(odd) .cell:last-child {
+    background-color: #188C18;
+}

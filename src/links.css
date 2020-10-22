@@ -1,0 +1,25 @@
+.links-container {
+    float: left;
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+    border-right: 5px solid #FF0000;
+}
+
+.links-container:nth-child(5n+5) {
+    border-right: none;
+}
+
+.small-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.links-link {
+    font-size: 20px;
+    color: #188C18;
+}
+
+.links-link:hover {
+    color: #FF0000;
+}
